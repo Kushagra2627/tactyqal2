@@ -1,0 +1,9 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}
+body{@apply bg-mist text-ink font-sans antialiased}
+:focus-visible{outline:3px solid #F2B01E;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.btn{@apply inline-flex items-center justify-center rounded-md px-5 py-2.5 font-semibold transition-colors}
+.btn-primary{@apply btn bg-lagoon text-white hover:bg-lagoon-dark}
+.btn-ghost{@apply btn border border-ink/25 hover:bg-ink hover:text-white}
+.input{@apply w-full rounded-md border border-line bg-white px-3 py-2}
